@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'jsonlee';
+  src:  url('fonts/jsonlee.eot?b0lxli');
+  src:  url('fonts/jsonlee.eot?b0lxli#iefix') format('embedded-opentype'),
+    url('fonts/jsonlee.ttf?b0lxli') format('truetype'),
+    url('fonts/jsonlee.woff?b0lxli') format('woff'),
+    url('fonts/jsonlee.svg?b0lxli#jsonlee') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jsonlee' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-A:before {
+  content: "\41";
+}
+.icon-J:before {
+  content: "\4a";
+}
+.icon-N:before {
+  content: "\4e";
+}
+.icon-O:before {
+  content: "\4f";
+}
+.icon-S:before {
+  content: "\53";
+}
+.icon-linkedin-square:before {
+  content: "\f08c";
+}
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+
+
+* {
+  margin: 0; padding: 0;
+}
+
+html, body {
+  font-family: 'jsonlee' !important;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+#container {
+  overflow: hidden;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  height: 100%;
+}
+
+#overlay {
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+#background_video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#video_cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('video_cover.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#main_content {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#main_content h1 {
+  font-size: 75px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 40px; left: 0; right: 0;
+}
+#footer a {
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 22px;
+  color: #fff;
+  opacity: 0.7;
+  transition: 1s;
+
+}
+#footer a:hover {
+  opacity: 1;
+}
