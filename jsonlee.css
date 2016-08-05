@@ -94,7 +94,29 @@ html, body {
   background-size: cover;
   background-position: center;
 }
+    
+#video_controls {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+    }
 
+#play img {
+  width: 100px;
+    }
+#pause img {
+  width: 90px;
+    }
+#pause {
+  display: none;
+    }
+
+    @media (min-width: 768px) {
+#video_controls {
+  display: none;
+      }
+    }
+    
 #main_content {
   z-index: 2;
   position: relative;
