@@ -1,0 +1,111 @@
+*{margin:0; padding:0}
+html, body { height: 100%; color: #c4c4c4;}
+body{color:#fff; background:#000;font: 11px Arial, Helvetica, sans-serif;}
+header, section, aside, article, footer, nav{display:block}
+
+ul, li, p{padding:0; margin:0; list-style:none;outline:none}
+h1, h2, h3, h4, h5 {margin: 0}
+h1{font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:200%; font-weight:normal }
+h2{font-size:100%; font-weight:normal; margin: 10px 0;}
+h3{font-size:120%; font-weight:normal}
+
+img{border:none}
+a, a:focus, a:hover, a:active{outline:none}
+a{color:#333;text-decoration:none; background:none}
+a:hover{color:#000}
+
+section a p{cursor:pointer}
+footer{margin:50px 0; text-align:right}
+
+#wrapper{
+	width: 599px;
+	margin: 100px auto 
+}
+
+#logo{
+	text-align:right;
+	margin: 10px 0;
+}
+
+#logo a{
+	color:#fff; 
+}
+
+.client {
+	font-style:italic;
+	color:#666
+}
+.content{
+    width:936px;
+    height:470px;
+    margin:0 auto;
+}
+
+.photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9{
+    width:599px;
+    height:400px;
+    background-repeat:no-repeat;
+    background-position:0px 0px;
+    float:center;
+}
+.photo1{
+    background-image:url(../images/1.png);
+}
+.photo2{
+    background-image:url(../images/2.png);
+}
+.photo3{
+    background-image:url(../images/3.png);   
+}
+.photo4{
+    background-image:url(../images/4.png);   
+}
+.photo5{
+    background-image:url(../images/5.png);   
+}
+.photo6{
+    background-image:url(../images/6.png);   
+}
+.photo7{
+    background-image:url(../images/7.png);   
+}
+.photo8{
+    background-image:url(../images/8.png);   
+}
+.photo9{
+    background-image:url(../images/9.png);   
+}
+.photo1 p, .photo2 p, .photo3 p, .photo4 p, .photo5 p, .photo6 p, .photo7 p, .photo8 p, .photo9 p{
+    background-position:-599px 0px;
+    display:block;
+    width:100%;
+    height:400px;
+    background-repeat:no-repeat;
+}
+.photo1 p{
+    background-image:url(../images/1.png);
+}
+.photo2 p{
+    background-image:url(../images/2.png);
+}
+.photo3 p{
+    background-image:url(../images/3.png);
+}
+.photo4 p{
+    background-image:url(../images/4.png);
+}
+.photo5 p{
+    background-image:url(../images/5.png);
+}
+.photo6 p{
+    background-image:url(../images/6.png);
+}
+.photo7 p{
+    background-image:url(../images/7.png);
+}
+.photo8 p{
+    background-image:url(../images/8.png);
+}
+.photo9 p{
+    background-image:url(../images/9.png);
+}

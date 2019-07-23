@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lity - Lightweight, accessible and responsive lightbox</title>
+    <meta name="description" content="Lity is a ultra-lightweight, accessible and responsive lightbox plugin which supports images, iframes and inline content out of the box.">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic' rel='stylesheet' type='text/css'>
+    <link href="assets/style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="assets/prism.css" media="all" rel="stylesheet" type="text/css">
+    <link href="dist/lity.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <h3>Demos</h3>
+
+    <p>
+        <a class="btn" href="https://farm9.staticflickr.com/8642/16455005578_0fdfc6c3da_b.jpg" data-lity data-lity-desc="Photo of a flower">Image</a>
+        <a class="btn" href="#inline" data-lity>Inline</a>
+        <a class="btn" href="//maps.google.com/maps?q=1600+Amphitheatre+Parkway,+Mountain+View,+CA" data-lity>Google Maps</a>
+        <a class="btn" href="//www.youtube.com/watch?v=XrDcrMjZr30E" data-lity>YouTube</a>
+        <a class="btn" href="//vimeo.com/1084537" data-lity>Vimeo</a>
+        <a class="btn" href="index.html" data-lity>URL</a>
+    </p>
+
+    <div id="inline" style="overflow:auto;background:#FDFDF6;padding:20px;width:600px;max-width:100%;border-radius:6px" class="lity-hide">
+        <form>
+            <fieldset style="border:0;">
+                <ul style="list-style:none">
+                    <li>
+                        <label for="input">Input</label>
+                        <input type="text" required name="name" id="input">
+                    </li>
+                    <li>
+                        <label for="textarea" style="width:100%">Textarea</label><br>
+                        <textarea id="textarea" rows="10" style="width:100%"></textarea>
+                    </li>
+                    <li>
+                        <input type="submit">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+
+
+<div class="wrap wrap-center">
+    <p><small>Copyright (c) 2015-<script>document.write(new Date().getFullYear());</script> Jan Sorgalla. Released under the MIT license.</small></p>
+</div>
+
+<a href="https://github.com/jsor/lity"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+<script src="vendor/jquery.js"></script>
+<script src="dist/lity.js"></script>
+
+<script src="assets/prism.js"></script>
+</body>
+</html>
