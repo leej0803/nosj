@@ -96,12 +96,14 @@ html, body {
   background-position: center; */
 }
 
+/*
 #video_controls {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 0); */
 }
 
+/*
 #play img {
   width: 100px;
 }
@@ -109,7 +111,7 @@ html, body {
   width: 90px;
 }
 #pause {
-  display: none;
+  display: none; */
 }
 
 #main_content {
@@ -118,6 +120,7 @@ html, body {
   display: inline-block;
   top: 50%;
   transform: translateY(-50%);
+  text-align: center;
 }
 
 #main_content h1 {
