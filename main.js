@@ -1,25 +1,13 @@
 (function () {
-
   var bv = new Bideo();
   bv.init({
-    // Video element
     videoEl: document.querySelector('#background_video'),
-
-    // Container element
     container: document.querySelector('body'),
-
-    // Resize
     resize: true,
-
-    autoplay: true, // Enable autoplay
-
+    autoplay: true,
     isMobile: window.matchMedia('(max-width: 768px)').matches,
-
-    playButton: document.querySelector('#play'),
-    pauseButton: document.querySelector('#pause'),
-
-    // Array of objects containing the src and type
-    // of different video formats to add
+    playButton: null, // No play button
+    pauseButton: null, // No pause button
     src: [
       {
         src: 'night.mp4',
@@ -30,10 +18,22 @@
         type: 'video/webm;codecs="vp8, vorbis"'
       }
     ],
-
-    // What to do once video loads (initial frame)
     onLoad: function () {
       document.querySelector('#video_cover').style.display = 'none';
+      // Fade in video after a short delay
+      setTimeout(function() {
+        const videoElement = document.getElementById('background_video');
+        if (videoElement) {
+          videoElement.style.opacity = 1;
+          videoElement.style.transition = 'opacity 1s ease-in-out';
+        }
+      }, 500); // Adjust delay as needed (milliseconds)
     }
   });
+
+  // Clean up video controls element if it exists
+  const videoControls = document.getElementById('video_controls');
+  if (videoControls) {
+    videoControls.remove();
+  }
 }());
