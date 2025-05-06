@@ -85,8 +85,6 @@ html, body {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  opacity: 0; /* Initially make the video transparent */
-  transition: opacity 2s ease-in-out; /* Fade in over 1 second */
 }
 
 #main_content {
