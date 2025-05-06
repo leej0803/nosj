@@ -20,12 +20,12 @@
     ],
     onLoad: function () {
       document.querySelector('#video_cover').style.display = 'none';
-      // Fade in video after a short delay
+      // Fade in video after a short delay (longer duration)
       setTimeout(function() {
         const videoElement = document.getElementById('background_video');
         if (videoElement) {
           videoElement.style.opacity = 1;
-          videoElement.style.transition = 'opacity 1s ease-in-out';
+          videoElement.style.transition = 'opacity 2s ease-in-out'; // Changed to 2 seconds
         }
       }, 500); // Adjust delay as needed (milliseconds)
     }
